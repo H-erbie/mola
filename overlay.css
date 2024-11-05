@@ -1,0 +1,42 @@
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+   
+}
+
+
+.show{
+    display: flex;
+}
+.disappear{
+    display: none;
+}
+.pop-win, .conf-edit-form{
+    width: 50%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #fff;
+    position: relative;
+}
+
+.cls-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: crimson;
+}
+.cls-btn i{
+    color: #fff;
+}

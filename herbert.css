@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+.sherp-con, .confirm{
+    height: unset;
+}
+.sign-head{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+label{
+    margin: 1rem 0;
+
+}
+
+.input input{
+    border-radius: 2rem;
+}
+.sink{
+    width: 30%;
+    margin: 0 auto;
+
+}
+
+.links{
+    text-align: center;
+    margin-top: 1rem;
+}
+.flex{
+    display: flex;
+}
+.fog-link{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.form-shep{
+    padding-top: 4rem;
+}
+#signup .form-group, #signin .form-group  .form-group{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1rem;
+}
+/* #signup{
+    margin-top: 5rem;
+} */
+.form-group button, .form-group a{
+    border-radius: 2rem;
+    
+}
+.log-in-btn, .save{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 0 1rem;
+    border-radius: 2rem;
+
+}
+
+.log-in-btn i , .save i{
+    transition: all 0.5s ease;
+    animation: spin 1s infinite linear;
+    visibility: hidden;
+}
+
+
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }}  
+
+#shep .form-btn{
+    margin: 2rem auto;
+    width: max-content;
+   
+}
+#shep .form-btn button{
+    border-radius: 2rem;
+}
+.signup-btns{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1rem;
+}
+.show i{
+    visibility: visible;
+}
+.conf-edit-form{
+    display: none;
+    flex-direction: column;
+}
+.conf-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+.hide{
+    display: none;
+}
+
+.text-3xl{
+    font-size: 10rem;
+}
+.profile-self, .email-self{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.email-self{
+    text-transform: unset;
+
+}
+.profile-field{
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    width: 30%;
+    margin: 0 auto;
+}
+.profile-con{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.save:disabled{
+    opacity: 20%;
+}
+
+@media (min-width:300px) {
+    #signup, #signin{
+        width: 90%;
+    }
+    #signup form,  #signin form, #shep form{
+        width: 100%;
+    }
+    .profile-field{
+        
+        width: 80%;
+    }
+}
+
+@media (min-width:600px) {
+    #signup, #signin{
+        width: 50%;
+    }
+    #signup form,  #signin form, #shep form{
+        width: 100%;
+    }
+    .profile-field{
+        
+        width: 50%;
+    }
+}
+@media (min-width:1050px) {
+    #signup, #signin{
+        width: 30%;
+    }
+    #signup form, #signin form, #shep form{
+        width: 100%;
+    }
+    .profile-field{
+        
+        width: 40%;
+    }
+}
